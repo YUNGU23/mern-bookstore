@@ -88,7 +88,7 @@ const ProductEditScreen = () => {
         Go Back
       </Link>
       <FormContainer>
-        <h1>Edit Product</h1>
+        <h1>Edit Book</h1>
         {loadingUpdate && <Loader />}
         {isLoading ? (
           <Loader />
@@ -133,10 +133,10 @@ const ProductEditScreen = () => {
             </Form.Group>
 
             <Form.Group controlId='brand'>
-              <Form.Label>Brand</Form.Label>
+              <Form.Label>Author</Form.Label>
               <Form.Control
                 type='text'
-                placeholder='Enter brand'
+                placeholder='Enter author'
                 value={brand}
                 onChange={(e) => setBrand(e.target.value)}
               ></Form.Control>

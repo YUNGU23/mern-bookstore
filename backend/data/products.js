@@ -8,8 +8,7 @@ const products = [
     category: 'Literature & Fiction',
     price: 9.99,
     countInStock: 20,
-    rating: 4.2,
-    numReviews: 1528,
+    rating: 4.2, 
   },
   {
     name: 'To Kill a Mockingbird',

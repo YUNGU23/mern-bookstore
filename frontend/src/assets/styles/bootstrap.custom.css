@@ -730,7 +730,9 @@ progress {
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  max-height:600px;
 }
 
 .img-thumbnail {
@@ -771,6 +773,7 @@ progress {
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
+  /* height:600px; */
 }
 
 @media (min-width: 576px) {
@@ -4585,6 +4588,7 @@ fieldset:disabled .btn {
 .card-img-top,
 .card-img-bottom {
   width: 100%;
+  max-height:300px;
 }
 
 .card-img,
@@ -6228,8 +6232,11 @@ fieldset:disabled .btn {
 
 .carousel-inner {
   position: relative;
-  width: 100%;
   overflow: hidden;
+  object-fit: cover;
+  height:600px;
+  width: auto;
+  /* max-height:600px; */
 }
 .carousel-inner::after {
   display: block;
@@ -6241,11 +6248,13 @@ fieldset:disabled .btn {
   position: relative;
   display: none;
   float: left;
+  height:600px;
   width: 100%;
   margin-right: -100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
+  /* max-height:800px; */
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
